@@ -1,0 +1,40 @@
+// Homework Problem #1
+// Reverse the string
+
+let str = "Im trying to do this while very tired"
+let rev_str = str.split("").reverse().join("")
+
+console.log("Homework Problem #1")
+console.log("The original sentence:", str)
+console.log("The reversed sentence:",rev_str)
+
+//Homework Problem #2
+//Split the array and count the words in it
+
+let sentence = 'I wanted to do a for loop because I overcomplicate things'
+let words = sentence.split(" ")
+let count = words.length
+
+console.log("Homework Problem #2")
+console.log("There are", count, "words in this sentence.")
+
+//Homework Problem #3
+// Replace v with w and vice versa
+
+let third = 'wave'
+let third_changed = []
+for (var i = 0; i < third.length; i++) {
+    if (third[i] === 'v') {
+      third_changed.push('w')
+    }
+    else if (third[i] === 'w') {
+      third_changed.push('v')
+    }
+    else {
+      third_changed.push(third[i])
+    }
+  }
+let third_joined = third_changed.join("")
+
+console.log("Homework Problem #3")
+console.log(third_joined)
