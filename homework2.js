@@ -38,3 +38,30 @@ let third_joined = third_changed.join("")
 
 console.log("Homework Problem #3")
 console.log(third_joined)
+
+// Homework Problem 4
+// Palindrome check
+// This is to check for an individual palindrome
+
+let palindrome = "wow"
+let rev_palindrome = palindrome.split("").reverse().join("")
+
+if ( palindrome === rev_palindrome) {
+    console.log(true)
+}
+else {
+    console.log(false)
+}
+
+// This is to check for palindromes in an array
+
+let palindromeArray = ['wow', 'dog', 'madam', 'white', 'level', 'nurses run']
+let count = 0
+for (let i = 0; i < palindromeArray.length; i++) {
+    let item = palindromeArray[i].replace(' ', '')
+    let rev_item = item.split('').reverse().join('')
+    if ( item === rev_item ) {
+        count++
+    }
+}
+console.log("There are", count, "palindromes in this array.")
