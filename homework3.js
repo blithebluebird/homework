@@ -138,3 +138,5 @@ function magicEightBall(){
 magicEightBall()
 
 // Homework Problem 10
+// A recursive function is a fucntion that calls on itself. It must have a 
+// condition that stops it from calling itself, otherwise it will keep looping.
